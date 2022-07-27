@@ -34,7 +34,7 @@ function generateGrid() {
 }
 
 function mouseDraw() {
-    this.setAttribute('style', 'background-color:white;')
+    this.style.backgroundColor = "white";
 }
 
 const resetButton = document.querySelector('button');
