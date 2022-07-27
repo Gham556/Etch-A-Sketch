@@ -11,8 +11,8 @@ square.addEventListener('mouseover', mouseDraw)
 
 
 function generateGrid() {
-    console.log(square)
-    container.removeChild(square)
+   const myDiv = document.getElementById('main');
+   myDiv.innerHTML = "";
 }
 
 }
