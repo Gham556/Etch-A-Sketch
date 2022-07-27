@@ -16,20 +16,23 @@ function generateGrid() {
    myDiv.innerHTML = "";
 
   const gridSize = prompt("Choose Your Grid Size With A Single Number Below 100")
- 
-  const squareSize = (896 / gridSize - 6) / 2 + 'px';  
-  console.log(squareSize);
+    if (gridSize < 100) {
+      const squareSize = (896 / gridSize - 6) / 2 + 'px';  
+      console.log(squareSize);
   
   
-  for (let i = 0; i < gridSize * gridSize; i++){
-    const square = document.createElement('div');
-    document.createAttribute('square');
-    square.classList.add('square'); 
-    square.style.padding = squareSize
-    container.appendChild(square);
-    square.addEventListener('mouseover', mouseDraw)
+      for (let i = 0; i < gridSize * gridSize; i++){
+        const square = document.createElement('div');
+        document.createAttribute('square');
+        square.classList.add('square'); 
+        square.style.padding = squareSize
+        container.appendChild(square);
+        square.addEventListener('mouseover', mouseDraw)
   } 
-
+    }
+    else {
+      alert("Please Enter A Number Below 100")
+    }
 }
 }
 
