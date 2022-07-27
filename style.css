@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
+    flex: 0 0 896px;
     max-height: 896px;
     width: 896px;
     gap: 0;
@@ -26,6 +26,7 @@ body {
     max-height: 8px;
     padding: 25px;
     margin: 0;
-    
+    /*flex: 1 1 0px;
+    width: 0;*/
 }
 
